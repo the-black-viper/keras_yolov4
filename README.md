@@ -2,11 +2,7 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
-# 请使用更完善的版本:
-
-# [https://github.com/miemie2013/Keras-YOLOv4](https://github.com/miemie2013/Keras-YOLOv4)
-
-# Please visit here for more complete model:
+# Reference Model:
 
 # [https://github.com/miemie2013/Keras-YOLOv4](https://github.com/miemie2013/Keras-YOLOv4)
 
@@ -24,18 +20,10 @@ Frame code from [https://github.com/qqwweee/keras-yolo3](https://github.com/qqww
 
 1. Download YOLOv4 weights from [yolov4.weights](https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT).
 2. Convert the Darknet YOLOv4 model to a Keras model.
-3. Run YOLOv4 detection.
-
 ```
 python convert.py
 ```
-
-Running convert.py will get keras yolov4 weight file yolo4_weight.h5.
-
-
-### Usage
-
-Inference
+3. Run YOLOv4 detection.
 
 ```
 python test.py
@@ -44,4 +32,4 @@ python test.py
 
 ### Todo
 
-Debug train code with CIoU loss. Loss code from [https://github.com/david8862/keras-YOLOv3-model-set](https://github.com/david8862/keras-YOLOv3-model-set).
+Update to Keras 2.4 and TF 2
