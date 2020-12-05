@@ -33,9 +33,11 @@ def get_anchors(anchors_path):
 if __name__ == '__main__':
     print('Please visit https://github.com/miemie2013/Keras-YOLOv4 for more complete model!')
 
-    model_path = 'ep073-loss11.905.h5'
+    # model_path = 'ep073-loss11.905.h5'
+    model_path = 'yolo4_weight.h5'
     anchors_path = 'model_data/yolo4_anchors.txt'
-    classes_path = 'model_data/voc_classes.txt'
+    # classes_path = 'model_data/voc_classes.txt'
+    classes_path = 'model_data/coco_classes.txt'
 
     class_names = get_class(classes_path)
     anchors = get_anchors(anchors_path)
@@ -45,7 +47,7 @@ if __name__ == '__main__':
 
     model_image_size = (608, 608)
 
-    # 分数阈值和nms_iou阈值
+   
     conf_thresh = 0.2
     nms_thresh = 0.45
 
